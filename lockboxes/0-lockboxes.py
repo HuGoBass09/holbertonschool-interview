@@ -13,7 +13,7 @@ def canUnlockAll(boxes):
 
     while keys:
         key = keys.pop()
-        if key not in unlockedBoxes:
+        if key not in unlockedBoxes and key < len(boxes):
             unlockedBoxes.add(key)
             keys.extend(boxes[key])
 
