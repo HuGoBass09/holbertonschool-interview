@@ -33,8 +33,8 @@ void make_stable(int grid[3][3]) {
     bool isUnstable = true;
 
     while (isUnstable) {
+        int temp[3][3];
         isUnstable = false;
-        int temp[3][3] = {0};
         for (i = 0; i < 3; ++i) {
             for (j = 0; j < 3; ++j) {
                 temp[i][j] = grid[i][j];
