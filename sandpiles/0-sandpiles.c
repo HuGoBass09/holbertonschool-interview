@@ -73,7 +73,7 @@ bool stabilize_grid(int grid[3][3], int temp[3][3])
 		}
 	}
 
-	return isUnstable;
+	return (isUnstable);
 }
 
 /**
