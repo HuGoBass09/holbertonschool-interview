@@ -1,7 +1,5 @@
 #include <stdlib.h>
-
 #include <stdio.h>
-
 #include <stdbool.h>
 
 /**
@@ -12,6 +10,7 @@
 static void print_grid(int grid[3][3])
 {
     int i, j;
+
     for (i = 0; i < 3; i++)
     {
         for (j = 0; j < 3; j++)
@@ -38,6 +37,7 @@ void make_stable(int grid[3][3])
     {
         int temp[3][3];
         isUnstable = false;
+
         for (i = 0; i < 3; ++i)
         {
             for (j = 0; j < 3; ++j)
@@ -59,17 +59,14 @@ void make_stable(int grid[3][3])
                     {
                         temp[i - 1][j] += 1;
                     }
-
                     if (i < 2)
                     {
                         temp[i + 1][j] += 1;
                     }
-
                     if (j > 0)
                     {
                         temp[i][j - 1] += 1;
                     }
-
                     if (j < 2)
                     {
                         temp[i][j + 1] += 1;
@@ -100,7 +97,6 @@ void make_stable(int grid[3][3])
  * @grid2: 3x3 grid
  *
  */
-
 void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 {
     int i, j;
