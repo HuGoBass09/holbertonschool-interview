@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-"""Input stats"""
+"""Input log files and output them formatted"""
 
 
 import sys
