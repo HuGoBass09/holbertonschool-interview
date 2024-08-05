@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-
 """Input log files and output them formatted"""
 
 
