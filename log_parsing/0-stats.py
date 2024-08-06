@@ -5,7 +5,6 @@
 
 
 import sys
-import re
 
 
 logs = 0
