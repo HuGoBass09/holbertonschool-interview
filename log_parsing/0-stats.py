@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""Showing statistics about logs"""
+
 import sys
 import re
 
