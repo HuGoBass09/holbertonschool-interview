@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-"""Input stats"""
+
+
+"""Showing statistics about logs"""
 
 import sys
+import re
 
 
 logs = 0
