@@ -21,6 +21,7 @@ status_codes = {
 
 
 def print_statistics(statuses, total):
+    """Function to print logs"""
     print("File size: {}".format(total))
     for key, value in sorted(statuses.items()):
         if value != 0:
