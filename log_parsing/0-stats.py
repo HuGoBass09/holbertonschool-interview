@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-"""Showing statistics about logs"""
+
+"""Input stats"""
+
 
 import sys
 import re
@@ -16,12 +18,11 @@ status_codes = {
     "403": 0,
     "404": 0,
     "405": 0,
-    "500": 0,
+    "500": 0
 }
 
 
 def print_statistics(statuses, total):
-    """Function to print logs"""
     print("File size: {}".format(total))
     for key, value in sorted(statuses.items()):
         if value != 0:
