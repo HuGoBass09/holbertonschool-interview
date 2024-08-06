@@ -24,10 +24,10 @@ status_codes = {
 
 def print_statistics(statuses, total):
     """Print the current statistics."""
-    print("File size: {}".format(total))
+    print(f"File size: {total}")
     for key, value in sorted(statuses.items()):
         if value != 0:
-            print("{}: {}".format(key, value))
+            print(f"{key}: {value}")
 
 
 try:
