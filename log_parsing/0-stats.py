@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 
-"""Input stats
-"""
+"""Input stats"""
 
 
 import sys
