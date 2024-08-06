@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-# Input stats for logs
+"""Input stats for logs"""
 
 
 import sys
@@ -23,7 +23,7 @@ status_codes = {
 
 
 def print_statistics(statuses, total):
-    # Printing function
+    """Printing function for logs"""
     print("File size: {}".format(total))
     for key, value in sorted(statuses.items()):
         if value != 0:
