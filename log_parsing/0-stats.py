@@ -8,7 +8,6 @@ a keyboard interrupt is received, all info will be printed.
 
 import sys
 
-stats = 0
 logs = 0
 total_size = 0
 status_codes = {
