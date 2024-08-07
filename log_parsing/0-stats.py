@@ -9,6 +9,14 @@ a keyboard interrupt is received, all info will be printed.
 import sys
 
 
+def print_statistics(statuses, total):
+    """Print the current statistics."""
+    print(f"File size: {total}")
+    for key, value in sorted(statuses.items()):
+        if value != 0:
+            print(f"{key}: {value}")
+
+
 def main():
     logs = 0
     total_size = 0
@@ -22,13 +30,6 @@ def main():
         "405": 0,
         "500": 0,
     }
-
-    def print_statistics(statuses, total):
-        """Print the current statistics."""
-        print(f"File size: {total}")
-        for key, value in sorted(statuses.items()):
-            if value != 0:
-                print(f"{key}: {value}")
 
     try:
         for line in sys.stdin:
