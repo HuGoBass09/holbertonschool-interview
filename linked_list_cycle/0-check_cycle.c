@@ -31,4 +31,5 @@ int check_cycle(listint_t *head)
             return 1;
         }
     }
+    return 0;
 }
