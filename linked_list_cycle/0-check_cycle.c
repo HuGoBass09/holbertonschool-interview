@@ -8,18 +8,27 @@
 
 int check_cycle(listint_t *head)
 {
-    int size = print_listint(head);
-    for (int i = 0; i < size; ++i)
-    {
-        head = head->next;
-    }
+    listint_t *tortoise = head;
+    listint_t *hare = head;
 
-    if (head == NULL)
+    while (head->next != NULL)
     {
-        return 0;
-    }
-    else
-    {
-        return 1;
+        tortoise = tortoise->next;
+        hare = hare->next;
+        head = head->next;
+        if (head->next != NULL)
+        {
+            hare = hare->next;
+            head = head->next;
+        }
+        else
+        {
+            return 0;
+        }
+
+        if (hare == tortoise)
+        {
+            return 1;
+        }
     }
 }
