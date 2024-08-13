@@ -11,14 +11,15 @@ int check_cycle(listint_t *head)
     int size = print_listint(head);
     for (int i = 0; i < size; ++i)
     {
-        if (head->next != NULL)
-        {
-            head = head->next;
-        }
-        else
-        {
-            return 0;
-        }
+        head = head->next;
     }
-    return 1;
+
+    if (head == NULL)
+    {
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
 }
