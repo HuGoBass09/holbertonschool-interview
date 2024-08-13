@@ -10,7 +10,10 @@ int check_cycle(listint_t *head)
 {
     listint_t *tortoise = head;
     listint_t *hare = head;
-
+    if (head == NULL)
+    {
+        return 0;
+    }
     while (head->next != NULL)
     {
         tortoise = tortoise->next;
