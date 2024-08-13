@@ -8,17 +8,17 @@
 
 int check_cycle(listint_t *head)
 {
-    int n = print_listint(head);
-    listint_t *temp_head = head;
-    head = head->next;
-
-    for (int i = 0; i <= n; ++i)
+    int size = print_listint(head);
+    for (int i = 0; i < size; ++i)
     {
-        if (head == temp_head)
+        if (head->next != NULL)
         {
-            return 1;
+            head = head->next;
         }
-        head = head->next;
+        else
+        {
+            return 0;
+        }
     }
-    return 0;
+    return 1;
 }
