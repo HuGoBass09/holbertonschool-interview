@@ -1,0 +1,1 @@
+Checking whether an integer is polindromeor not in C
