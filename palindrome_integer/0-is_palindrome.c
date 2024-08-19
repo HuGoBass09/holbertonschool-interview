@@ -11,7 +11,7 @@
  */
 int is_palindrome(unsigned long n)
 {
-    unsigned long reverse_n = 0, temp_n = n;
+    unsigned long reverse_n = 0, temp_n = n / 10;
     int digits = 1;
 
     while (temp_n != 0) {
