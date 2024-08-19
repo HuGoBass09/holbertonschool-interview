@@ -14,7 +14,7 @@ int is_palindrome(unsigned long n)
     while (temp_n != 0)
     {
         reverse_n += temp_n % 10 * digit;
-        temp_n %= 10;
+        temp_n /= 10;
         digit *= 10;
     }
 
