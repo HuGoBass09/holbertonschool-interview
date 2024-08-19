@@ -1,4 +1,5 @@
 #include "palindrome.h"
+#include<math.h>
 
 /**
  * is_palindrome - checkes whether a number is palindrome or not
@@ -9,13 +10,20 @@
 int is_palindrome(unsigned long n)
 {
     unsigned long reverse_n = 0, temp_n = n;
-    int digit = 1;
+    int digits = 0;
+
+    while (temp_n != 0) {
+        temp_n /= 10;
+        ++digits;
+    }
+
+    temp_n = n;
 
     while (temp_n != 0)
     {
-        reverse_n += (temp_n % 10) * digit;
+        reverse_n += (temp_n % 10) * pow(10, digits);
         temp_n /= 10;
-        digit *= 10;
+        --digits;
     }
 
     if (n == reverse_n)
