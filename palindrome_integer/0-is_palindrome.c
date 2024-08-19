@@ -1,6 +1,8 @@
 #include "palindrome.h"
 #include<math.h>
 
+
+
 /**
  * is_palindrome - checkes whether a number is palindrome or not
  *
