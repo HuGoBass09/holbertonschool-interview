@@ -3,7 +3,7 @@
 
 
 def validUTF8(data):
-    """Function"""
+    """A function to validate utf-8 encoding"""
 
     count = 0
     for dt in data:
